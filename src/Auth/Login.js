@@ -7,28 +7,27 @@ import "./Login.scss";
 import { FormattedMessage } from "react-intl";
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
-  }
+    constructor(props) {
+        super(props);
+    }
 
-  render() {
-    return <div>Hello login</div>;
-  }
+    render() {
+        return <div>Hello login</div>;
+    }
 }
 
 const mapStateToProps = (state) => {
-  return {
-    language: state.app.language,
-  };
+    return {
+        language: state.app.language,
+    };
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    navigate: (path) => dispatch(push(path)),
-    adminLoginSuccess: (adminInfo) =>
-      dispatch(actions.adminLoginSuccess(adminInfo)),
-    adminLoginFail: () => dispatch(actions.adminLoginFail()),
-  };
+    return {
+        navigate: (path) => dispatch(push(path)),
+        adminLoginSuccess: (adminInfo) =>
+            dispatch(actions.adminLoginSuccess(adminInfo)),
+    };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
