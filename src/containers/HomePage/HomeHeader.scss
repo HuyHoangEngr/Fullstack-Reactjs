@@ -9,15 +9,15 @@
         display: flex;
 
         .left-content {
-            width: 25%;
-            border: 1px solid green;
+            width: 20%;
             display: flex;
+            justify-content: end;
             align-items: center;
 
             .header-logo {
                 background-image: url(../../assets/logo.svg);
-                height: 100%;
-                width: 100%;
+                height: 95%;
+                width: 45%;
                 background-size: contain;
                 background-repeat: no-repeat;
                 cursor: pointer;
@@ -27,14 +27,14 @@
                 font-size: 24px;
                 color: grey;
                 cursor: pointer;
+                padding: 10px;
             }
         }
 
         .center-content {
-            width: 50%;
-            border: 1px solid orange;
+            width: 55%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
 
             .child-content {
@@ -47,10 +47,39 @@
 
         .right-content {
             width: 25%;
-            border: 1px solid grey;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .support {
+                display: flex;
+                align-items: center;
+                margin: 0 30px;
+                cursor: pointer;
+
+                i {
+                    margin-right: 5px;
+                    font-size: 18px;
+                    color: gray;
+                }
+            }
+
+            .language-vn {
+                margin-right: 5px;
+                cursor: pointer;
+
+                &.active {
+                    color: red;
+                }
+            }
+
+            .language-en {
+                cursor: pointer;
+
+                &.active {
+                    color: blue;
+                }
+            }
         }
     }
 }
@@ -66,16 +95,21 @@
     position: relative;
 
     .content-up {
-        height: 50%;
-        border: 1px solid red;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(255, 255, 255, 0.1)
+        );
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
 
         .title1 {
             text-align: center;
             font-size: 30px;
             font-weight: 600;
             text-shadow: 1px 1px 1px #333;
-            margin-bottom: 5px;
-            margin-top: 30px;
             color: white;
         }
 
@@ -111,8 +145,15 @@
     }
 
     .content-down {
-        height: 50%;
-        border: 1px solid green;
+        height: 35%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 1)
+        );
 
         .options {
             display: flex;
@@ -121,10 +162,10 @@
 
             .option-child {
                 width: 125px;
+                display: flex;
                 flex-direction: column;
                 text-align: center;
                 align-items: center;
-                border: 1px solid red;
                 cursor: pointer;
 
                 &:hover {
@@ -132,8 +173,8 @@
                 }
 
                 .icon-child {
-                    padding: 17px 11px;
-                    margin: 0 20px;
+                    padding: 19px 21px;
+                    margin: 0 25px;
                     background-color: white;
                     border-radius: 50%;
                     box-shadow: 2px 0px 3px black;
