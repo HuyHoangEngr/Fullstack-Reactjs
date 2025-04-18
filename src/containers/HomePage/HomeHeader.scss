@@ -64,20 +64,34 @@
                 }
             }
 
-            .language-vn {
+            .language-vi {
                 margin-right: 5px;
                 cursor: pointer;
+                opacity: 0.2;
 
                 &.active {
+                    opacity: 1;
                     color: red;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    opacity: 0.8;
                 }
             }
 
             .language-en {
                 cursor: pointer;
+                opacity: 0.2;
 
                 &.active {
+                    opacity: 1;
                     color: blue;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    opacity: 0.8;
                 }
             }
         }
