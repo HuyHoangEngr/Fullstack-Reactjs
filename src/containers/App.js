@@ -21,6 +21,7 @@ import System from "../routes/System";
 import { CustomToastCloseButton } from "../components/CustomToast";
 import HomePage from "./HomePage/HomePage.js";
 
+import CustomScrollbars from "../../src/components/CustomScrollbars.js";
 class App extends Component {
     handlePersistorState = () => {
         const { persistor } = this.props;
@@ -46,27 +47,34 @@ class App extends Component {
                 <Router history={history}>
                     <div className="main-container">
                         {this.props.isLoggedIn && <Header />}
-                        <span className="content-container">
-                            <Switch>
-                                <Route
-                                    path={path.HOME}
-                                    exact
-                                    component={Home}
-                                />
-                                <Route
-                                    path={path.LOGIN}
-                                    component={userIsNotAuthenticated(Login)}
-                                />
-                                <Route
-                                    path={path.SYSTEM}
-                                    component={userIsAuthenticated(System)}
-                                />
-                                <Route
-                                    path={path.HOMEPAGE}
-                                    component={HomePage}
-                                />
-                            </Switch>
-                        </span>
+                        <div className="content-container">
+                            <CustomScrollbars
+                                //neu chieu cao vuot qua 100vh thi con cuon se xuat hien
+                                style={{ height: "100vh", width: "100%" }}
+                            >
+                                <Switch>
+                                    <Route
+                                        path={path.HOME}
+                                        exact
+                                        component={Home}
+                                    />
+                                    <Route
+                                        path={path.LOGIN}
+                                        component={userIsNotAuthenticated(
+                                            Login
+                                        )}
+                                    />
+                                    <Route
+                                        path={path.SYSTEM}
+                                        component={userIsAuthenticated(System)}
+                                    />
+                                    <Route
+                                        path={path.HOMEPAGE}
+                                        component={HomePage}
+                                    />
+                                </Switch>
+                            </CustomScrollbars>
+                        </div>
 
                         <ToastContainer
                             className="toast-container"
