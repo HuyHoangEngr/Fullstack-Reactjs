@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Fullstack-Reactjs/home/static/css/main.c91cc0e9.chunk.css",
-    "main.js": "/Fullstack-Reactjs/home/static/js/main.a098c642.chunk.js",
-    "main.js.map": "/Fullstack-Reactjs/home/static/js/main.a098c642.chunk.js.map",
+    "main.js": "/Fullstack-Reactjs/home/static/js/main.bfd927fb.chunk.js",
+    "main.js.map": "/Fullstack-Reactjs/home/static/js/main.bfd927fb.chunk.js.map",
     "runtime-main.js": "/Fullstack-Reactjs/home/static/js/runtime-main.b0e62971.js",
     "runtime-main.js.map": "/Fullstack-Reactjs/home/static/js/runtime-main.b0e62971.js.map",
     "static/css/2.e7949ab0.chunk.css": "/Fullstack-Reactjs/home/static/css/2.e7949ab0.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.e7949ab0.chunk.css",
     "static/js/2.5c08ea5e.chunk.js",
     "static/css/main.c91cc0e9.chunk.css",
-    "static/js/main.a098c642.chunk.js"
+    "static/js/main.bfd927fb.chunk.js"
   ]
 }
