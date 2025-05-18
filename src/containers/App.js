@@ -53,7 +53,7 @@ class App extends Component {
                                 style={{ height: "100vh", width: "100%" }}
                             >
                                 <Switch>
-                                    <Route
+                                    {/* <Route
                                         path={path.HOME}
                                         exact
                                         component={Home}
@@ -67,7 +67,7 @@ class App extends Component {
                                     <Route
                                         path={path.SYSTEM}
                                         component={userIsAuthenticated(System)}
-                                    />
+                                    /> */}
                                     <Route
                                         path={path.HOMEPAGE}
                                         component={HomePage}
