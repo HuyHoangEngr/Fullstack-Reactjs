@@ -30,7 +30,7 @@ class HomePage extends Component {
                 <HandBook settings={settings} />
                 <About />
                 <HomeFooter />
-                {/* Laptop gram 21/May/25*/}
+                {/* Laptop gram 21/May/25 on dev1 branch*/}
             </div>
         );
     }
